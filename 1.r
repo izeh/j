@@ -1,5 +1,6 @@
  p.es = function(n, es, n.sim){
   
+if(length(n) > 1 & length(es) > 1) stop("Error: 'Effect Size' and 'Sample Size' cannot be explored together.")    
 t.sim = Vectorize(function(n, es){
     d = numeric(n.sim)
     p = numeric(n.sim)   
