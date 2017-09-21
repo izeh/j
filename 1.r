@@ -1,6 +1,6 @@
  p.es = function(n, es, n.sim){
   
-if(length(n) > 1 & length(es) > 1) stop("Error: 'Effect Size' and 'Sample Size' should be explored one at a time.")    
+if(length(n) > 1 & length(es) > 1) stop("Error: Explore 'Effect Size' and 'Sample Size' one at a time.")    
 t.sim = Vectorize(function(n, es){
     d = numeric(n.sim)
     p = numeric(n.sim)   
