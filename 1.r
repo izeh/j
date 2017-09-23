@@ -16,6 +16,7 @@ for(i in 1:n.sim){
  mtext(paste0("Group Sample Size = ", n), 3, font = 2, cex = .7)
  axis(1, at = h$breaks[2], font = 2, col = 2, col.axis = 2)
  hist(d, xlab = "Cohen's d", main = NA) ; axis(1, at = es, col = 2, col.axis = 2, font = 2)
+ mtext(paste0("Effect Size = ", es), 3, font = 2, line = -.75, cex = .7)
  q = quantile(d, c(.025, .975))
  segments(q[1], 0, q[2], 0, lend = 1, lwd = 4, col = 2)
  text(q, 0, round(q, 3), font = 2, pos = 3, col = 2)
